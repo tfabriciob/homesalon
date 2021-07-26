@@ -7,7 +7,10 @@
     <title>OriginSix</title>
 
     <!---icones-->
-      <link rel="stylesheet" href="assets/fonts/style.css">
+    <link rel="stylesheet" href="assets/fonts/style.css">
+
+    <!--Swiper-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
     <!---STYLES-->
     <link rel="stylesheet" href="/styles.css" />
@@ -17,7 +20,8 @@
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
-    />
+    />  
+
   </head>
   <body>
     <header id="header">
@@ -40,6 +44,9 @@
     </header>
 
     <main>
+
+      <!---HOME--->
+
       <section class="section" id="home">
         <div class="container grid">
           <div class="image">
@@ -58,6 +65,8 @@
 
       <div class="divider-1"></div>
 
+      <!---ABOUT--->
+
       <section class="section" id="about">        
         <div class="container grid">
           <div class="image">
@@ -74,9 +83,11 @@
             <br />
           </div>
         </div>
-        </section>
+      </section>
         
-        <div class="divider-2"></div>
+      <div class="divider-2"></div>
+
+      <!---SERVIÇOS---> 
 
       <section class="section" id="services">
         <div class="container grid">
@@ -111,7 +122,75 @@
         </div>
         </div>
       </section>
+
+      <div class="divider-1"></div>
+
+      <!---TESTIMONIALS---> 
+      <section class="section" id="testimonials">
+        <div class="container grid">
+          <header>
+            <h2 class="title">Depoimentos de quem já passou por aqui</h2>
+          </header>
+          <div class="testimonials swiper-container">
+
+            <div class="swiper-wrapper">
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente ea aliquid id quia reprehenderit a facere ut odit.
+                  </p>
+                  <cite>
+                    <img src="assets/fotos/Katherine-Miranda.jpg" alt="Katherine Miranda">
+                    Katherine Miranda
+                  </cite>
+                </blockquote>
+              </div>
+  
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente ea aliquid id quia reprehenderit a facere ut odit.
+                  </p>
+                  <cite>
+                    <img src="assets/fotos/Margarida-Taser.jpg" alt="Margarida Taser">
+                    Margarida Taser
+                  </cite>
+                </blockquote>
+              </div>
+  
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente ea aliquid id quia reprehenderit a facere ut odit.
+                  </p>
+                  <cite>
+                    <img src="assets/fotos/ragnar-viking.jpg" alt="Ragnar Viking">
+                    Ragnar Viking
+                  </cite>
+                </blockquote>
+              </div>
+
+            </div>
+
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            
+          </div>
+        </div>
+      </section>
+
+      <!---CONTACT---> 
+
+
     </main>
+
+    <!---Swiper--->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!---main--->
 
     <script src="main.js"></script>
 
