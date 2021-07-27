@@ -1,16 +1,16 @@
 // char - caracteres
-// string - conjunto de caracteres / conjunto de caracteressempre entre aspas simples
-// number - numeros
+// string - conjunto de caracteres / conjunto de caracteres sempre entre aspas simples
+// number - números
 //boolean: true ou false
 //estruturar dados coloca dentro de um par de chaves
 // { 
 //     name: 'carro'
 //     cor: 'vermelho' //este objeto tem um atributo de cor vermelha
 //     correr: function() {
-//         //aqui vem uma sequencia de codigos
+//         //aqui vem uma sequencia de códigos
 //     } //funcionalidades, função
 // }
-// funtion - função, da pra colocar uma sequencia de pares de codigos
+// function - função, da pra colocar uma sequencia de pares de códigos
 // function liquidificador(frutas) {
 //     alert(frutas)
 // }
@@ -21,7 +21,7 @@
 //const não altera o valor
 //let e var altera o valor
 
-/*Abre e fecha o menu quando clica no icone: hamburger e x*/
+/*Abre e fecha o menu quando clica no ícone: hamburger e x*/
 const nav = document.querySelector('#header nav')
 const toggle = document.querySelectorAll('nav .toggle')
 
@@ -31,7 +31,7 @@ for (const element of toggle) {
     })
 }
 
-/*quando clicar em algum intem do menu, esconder o menu*/
+/*quando clicar em algum item do menu, esconder o menu*/
 
 const links = document.querySelectorAll('nav ul li a')
 
@@ -58,7 +58,7 @@ window.addEventListener('scroll', function() {
 
 /*Testimonials carousel slider swiper*/
 const swiper = new Swiper('.swiper-container', {
-    slidesPerview: 1,
+    slidesPerView: 1,
     pagination: {
         el: '.swiper-pagination'
     },
@@ -80,5 +80,16 @@ scrollReveal.reveal(
     #about .image, #about .text,
     #services header, #services .card,
     #testimonials header, #testimonials .testimonials,
-    #contact .text, #contact .links
+    #contact .text, #contact .links,
+    footer .brand, footer .social
     `, { interval: 100 })
+
+/*botão voltar para o topo*/
+const backToTopButton = document.querySelector('.back-to-top')
+window.addEventListener('scroll', function() {
+    if (window.scrollY >= 560) {
+        backToTopButton.classList.add('show')
+    } else {
+        backToTopButton.classList.remove('show')
+    }
+})
